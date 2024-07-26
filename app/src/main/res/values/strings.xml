@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Open In App Test</string>
+    <string name="ajay_manva">Ajay Manva</string>
+    <string name="overview">Overview</string>
+    <string name="today_s_clicks">Today\'s Clicks</string>
+    <string name="top_location">Top Location</string>
+    <string name="top_source">Top Source</string>
+    <string name="view_analytics">View Analytics</string>
+    <string name="recent_links">Recent Links</string>
+</resources>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/Trunks"
+        android:layout_margin="10dp">
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:textSize="24sp"
+            android:text="@string/ajay_manva"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp">
+        </TextView>
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/handwave">
+        </ImageView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight="1"
+                    android:text="@string/overview"
+                    android:textSize="16sp"
+                    android:textColor="@color/Trunks"
+                    android:layout_margin="10dp">
+                </TextView>
+
+                <Button
+                    style="?attr/materialButtonOutlinedStyle"
+                    android:layout_width="123dp"
+                    android:layout_height="28dp"
+                    android:backgroundTint="@color/white"
+                    android:layout_weight="0"
+                    android:layout_margin="10dp">
+                </Button>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/avatar_1"
+                        android:layout_margin="10dp">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/todaysClicks"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textSize="16sp"
+                        android:text="@string/today_s_clicks"
+                        android:textColor="@color/Trunks"
+                        android:layout_margin="10dp">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/avatar_2"
+                        android:layout_margin="10dp">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/topLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textSize="16sp"
+                        android:text="@string/top_location"
+                        android:textColor="@color/Trunks"
+                        android:layout_margin="10dp">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/avatar_3"
+                        android:layout_margin="10dp">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/topSource"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black">
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:textSize="16sp"
+                        android:text="@string/top_source"
+                        android:textColor="@color/Trunks"
+                        android:layout_margin="10dp">
+                    </TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/linksCreatedToday"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="8dp">
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/view_analytics"
+        android:textColor="@color/black"
+        android:textSize="18sp">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/topLinksButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/Blue"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:text="Top Links"
+            android:onClick="onTopLinksButtonClicked">
+        </Button>
+
+        <Button
+            android:id="@+id/recentLinksButton"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:text="@string/recent_links"
+            android:onClick="onRecentLinkButtonClicked">
+        </Button>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
